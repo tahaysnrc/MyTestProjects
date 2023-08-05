@@ -1,1 +1,2 @@
-test yapıyorum.
+Test yapıyorum.
+Yazım yanlışını düzelttim.
