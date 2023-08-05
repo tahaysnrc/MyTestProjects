@@ -1,2 +1,3 @@
 Test yapıyorum.
 Yazım yanlışını düzelttim.
+git pull denemesi yapıyorum.
