@@ -1,4 +1,4 @@
-[readme.md](https://github.com/user-attachments/files/24013216/readme.md)
+[readme.md](https://github.com/user-attachments/files/24014787/readme.md)
 
 <p align="center">
 <img src="Image.png"
@@ -13,6 +13,7 @@ width="300" height="300">
 - [Genel Bakış](#genel-bakış)
 - [Özellikler](#özellikler)
 - [Teknolojiler](#teknolojiler)
+- [Klasör Yapısı](#klasör-yapısı)
 - [Veritabanı Şeması](#veritabanı-şeması)
 - [API Dokümantasyonu](#api-dokümantasyonu)
 - [Ekip Üyeleri](#ekip-üyeleri)
@@ -71,7 +72,67 @@ width="300" height="300">
 - **Bildirim Sistemi:** React Hot Toast
 - **Linting:** ESLint (Next.js core-web-vitals + TypeScript kuralları)
 
-
+# Klasör Yapısı
+```
+Root
+├─ backend                          # Backend kaynak kodları
+│  ├─ LibrarySystem                 # ASP.NET Core Web API projesi
+│  │   └─ LibrarySystem             # Uygulama mantığı ve servis katmanları
+│  │       ├─ Controllers           # API uç noktaları (Auth, Book, Loan, Fine, vb.)
+│  │       ├─ DataContext           # EF Core DbContext ve veritabanı konfigürasyonu
+│  │       ├─ Dtos                  # Veri transfer objeleri(Auth,Author,BookCopy,Book,Category,Dashboard,Error,Fine,FineType,Loan,Publisher,Room,Shelf,User için)
+│  │       ├─ Mapper                # AutoMapper profilleri (DTO ↔ Model dönüşümleri)
+│  │       ├─ Migrations            # EF Core migration dosyaları (veritabanı evrimleri)
+│  │       ├─ Properties            # Uygulama başlatma ayarları (launchSettings.json)
+│  │       ├─ Repositories          # Veri erişim katmanı (EF sorguları)
+│  │       ├─ RepositoryInterfaces  # Repository arayüzleri (soyutlama)
+│  │       ├─ ServiceInterfaces     # Servis arayüzleri (iş mantığı soyutlaması)
+│  │       └─ Services              # İş mantığı servisleri (business logic)
+│  └─ LibrarySystem.Models          # Ortak model katmanı
+│      └─ Models                    # Entity modelleri (Book, Author, Loan, Fine, vb.)
+└─ frontend                          # Next.js tabanlı frontend uygulaması
+   ├─ app                            # App Router sayfaları
+   │   ├─ admin                      # Yönetim paneli sayfaları
+   │   │   ├─ authors                # Yazar yönetimi
+   │   │   ├─ books                  # Kitap yönetimi
+   │   │   │   └─ add                # Yeni kitap ekleme sayfası
+   │   │   ├─ categories             # Kategori yönetimi
+   │   │   ├─ loans                  # Ödünç alma işlemleri
+   │   │   │   ├─ active             # Aktif ödünçler
+   │   │   │   ├─ history            # Geçmiş ödünçler
+   │   │   │   └─ overdue            # Gecikmiş ödünçler
+   │   │   ├─ publishers             # Yayıncı yönetimi
+   │   │   ├─ shelves                # Raf yönetimi
+   │   │   └─ users                  # Kullanıcı yönetimi
+   │   │       └─ banned             # Yasaklı kullanıcılar
+   │   ├─ api                        # API endpoint proxy’leri(auth,author,book,book-copy,category,dashboard,fine,loans,publisher,room,shelf,user için)
+   │   ├─ book                       # Kitap detay sayfası
+   │   │   └─ [id]                   # Dinamik kitap sayfası
+   │   ├─ login                      # Kullanıcı giriş sayfası
+   │   ├─ profile                    # Kullanıcı profil sayfası
+   │   └─ register                   # Kullanıcı kayıt sayfası
+   ├─ public                         # Statik dosyalar 
+   └─ src                            # Kaynak kodlar
+       ├─ components                 # UI bileşenleri
+       │   └─ ui                     # Genel UI parçaları
+       │       ├─ admin              # Admin paneli bileşenleri
+       │       │   ├─ Common         # Ortak admin bileşenleri
+       │       │   ├─ Modals         # Modal pencereler
+       │       │   │   └─ Update     # Güncelleme modalları
+       │       │   ├─ Shelves        # Raf bileşenleri
+       │       │   └─ Users          # Kullanıcı bileşenleri
+       │       ├─ book               # Kitap bileşenleri
+       │       ├─ BookDetail         # Kitap detay bileşenleri
+       │       ├─ Home               # Ana sayfa bileşenleri
+       │       ├─ Profile            # Profil bileşenleri
+       │       └─ Skeletons          # Yükleme iskeletleri (loading placeholders)
+       ├─ context                    # React context dosyaları (global state yönetimi)
+       ├─ hooks                      # Custom React hook’ları
+       ├─ services                   # API servis çağrıları
+       ├─ types                      # TypeScript tip tanımları
+       └─ utils                      # Yardımcı fonksiyonlar (helper utilities)
+                 
+ ```
 
 
 # Veritabanı Şeması
