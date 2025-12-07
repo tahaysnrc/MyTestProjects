@@ -1,4 +1,4 @@
-[readme.md](https://github.com/user-attachments/files/24014836/readme.md)
+[readme.md](https://github.com/user-attachments/files/24014872/readme.md)
 
 <p align="center">
 <img src="Image.png"
@@ -85,9 +85,9 @@ Root
 │  │       ├─ Migrations            # EF Core migration dosyaları (veritabanı evrimleri)
 │  │       ├─ Properties            # Uygulama başlatma ayarları (launchSettings.json)
 │  │       ├─ Repositories          # Veri erişim katmanı (EF sorguları)
-│  │       ├─ RepositoryInterfaces  # Repository arayüzleri (soyutlama)
+│  │       ├─ RepositoryInterfaces  # Repository arayüzleri 
 │  │       ├─ ServiceInterfaces     # Servis arayüzleri (iş mantığı soyutlaması)
-│  │       └─ Services              # İş mantığı servisleri (business logic)
+│  │       └─ Services              # İş mantığı servisleri 
 │  └─ LibrarySystem.Models          # Ortak model katmanı
 │      └─ Models                    # Entity modelleri (Book, Author, Loan, Fine, vb.)
 └─ frontend                          # Next.js tabanlı frontend uygulaması
@@ -125,12 +125,12 @@ Root
        │       ├─ BookDetail         # Kitap detay bileşenleri
        │       ├─ Home               # Ana sayfa bileşenleri
        │       ├─ Profile            # Profil bileşenleri
-       │       └─ Skeletons          # Yükleme iskeletleri (loading placeholders)
+       │       └─ Skeletons          # Yükleme iskeletleri 
        ├─ context                    # React context dosyaları (global state yönetimi)
        ├─ hooks                      # Custom React hook’ları
        ├─ services                   # API servis çağrıları
        ├─ types                      # TypeScript tip tanımları
-       └─ utils                      # Yardımcı fonksiyonlar (helper utilities)
+       └─ utils                      # Yardımcı fonksiyonlar 
                  
  ```
 
