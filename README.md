@@ -1,4 +1,4 @@
-[readme.md](https://github.com/user-attachments/files/24013062/readme.md)
+[readme.md](https://github.com/user-attachments/files/24013075/readme.md)
 
 <p align="center">
 <img src="Image.png"
@@ -47,7 +47,7 @@ width="300" height="300">
 
 # Teknolojiler
 
-### **Back-end**
+## **Back-end**
 - **Framework:** ASP.NET Core (.NET 8)
 - **ORM:** Entity Framework Core (SQL Server)
 - **Kimlik Doğrulama:** ASP.NET Identity + JWT Bearer Authentication
@@ -63,7 +63,7 @@ width="300" height="300">
 
 
 
-### **Front-end**
+## **Front-end**
 - **Framework:** Next.js 16
 - **Dil:** TypeScript 5
 - **UI Kütüphanesi:** React 19
@@ -153,12 +153,12 @@ width="300" height="300">
 
 # API Dokümantasyonu
 
-### 🔑 Kimlik Doğrulama
+## 🔑 Kimlik Doğrulama
 - `POST /api/auth/register` → Yeni kullanıcı kaydı  
 - `POST /api/auth/login` → Giriş işlemi, JWT token döner  
 - `POST /api/auth/refresh-token` → Token yenileme
 
-### 📚 Kitap Yönetimi
+## 📚 Kitap Yönetimi
 - `POST /api/book/add-book` → Yeni kitap ekle  
 - `GET /api/book/get-book/{id}` → Kitap detaylarını getir  
 - `GET /api/book/get-all-books` → Tüm kitapları listele  
@@ -174,14 +174,14 @@ width="300" height="300">
 - `GET /api/book/other-by-author` → Aynı yazarın diğer kitapları  
 - `GET /api/book/all-book-copies` → Tüm kitap kopyaları
 
-### 👤 Kullanıcı Yönetimi
+## 👤 Kullanıcı Yönetimi
 - `GET /api/user/me` → Giriş yapan kullanıcının bilgileri  
 - `GET /api/user/stats` → Kullanıcıya özel istatistikler  
 - `GET /api/user` → Tüm kullanıcıları listele (Admin)  
 - `GET /api/user/{id}` → Belirli kullanıcıyı getir (Admin)  
 - `GET /api/user/email/{email}` → E-posta ile kullanıcı arama (Admin)
 
-### 📦 Ödünç Alma / İade
+## 📦 Ödünç Alma / İade
 - `GET /api/loan/my-active-loans` → Kullanıcının aktif ödünçleri  
 - `GET /api/loan/my-returned-loans` → Kullanıcının iade ettiği kitaplar  
 - `GET /api/loan/can-borrow` → Kullanıcı ödünç alabilir mi?  
@@ -192,7 +192,7 @@ width="300" height="300">
 - `GET /api/loan/overdue` → Geciken ödünçler (Admin)  
 - `GET /api/loan/returned` → İade edilenler (Admin)
 
-### 💰 Ceza Yönetimi
+## 💰 Ceza Yönetimi
 - `POST /api/fine/issue` → Yeni ceza oluştur (Admin)  
 - `GET /api/fine/by-email` → Kullanıcıya ait cezalar (Admin)  
 - `GET /api/fine/my-active-fines` → Kullanıcının aktif cezaları  
@@ -200,7 +200,7 @@ width="300" height="300">
 - `POST /api/fine/revoke/{fineId}` → Ceza iptali (Admin)  
 - `POST /api/fine/pay` → Ceza ödeme (Kullanıcı)
 
-### 📁 Diğer Yönetim Alanları
+## 📁 Diğer Yönetim Alanları
 - **Yazarlar**: `GET /api/author`, `POST`, `DELETE`, `PUT`, `GET by-name`, `GET pageable`  
 - **Kategoriler**: `GET /api/category/list`, `POST`, `DELETE`, `PUT`, `GET by-name`, `GET pageable`  
 - **Yayıncılar**: `GET`, `POST`, `DELETE`, `PUT`, `GET by-name`, `GET pageable`  
