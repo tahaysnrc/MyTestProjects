@@ -1,4 +1,4 @@
-[readme.md](https://github.com/user-attachments/files/24013075/readme.md)
+[readme.md](https://github.com/user-attachments/files/24013216/readme.md)
 
 <p align="center">
 <img src="Image.png"
@@ -15,7 +15,6 @@ width="300" height="300">
 - [Teknolojiler](#teknolojiler)
 - [Veritabanı Şeması](#veritabanı-şeması)
 - [API Dokümantasyonu](#api-dokümantasyonu)
-- [Kurulum ve Çalıştırma](#kurulum-ve-çalıştırma)
 - [Ekip Üyeleri](#ekip-üyeleri)
 
 # Genel Bakış
@@ -24,7 +23,7 @@ width="300" height="300">
 
 
 # Özellikler
-## Login Paneli
+## Login/Register Paneli
 - 📝 İsim-soyisim, e-mail, telefon numarası, doğum tarihi ile kayıt
 - 🔒 Güvenli şifre belirleme
 - 🚪 E-mail ve şifre ile kolay giriş
@@ -209,37 +208,6 @@ width="300" height="300">
 - **Ceza Türleri**: `GET`, `POST`, `PUT update`, `GET by id`
 
 
-
-
-# Kurulum ve Çalıştırma
-##  Frontend
-
-Öncelikle geliştirme sunucusunu çalıştırın:
-
-```bash
-npm run dev
-# veya
-yarn dev
-# veya
-pnpm dev
-# veya
-bun dev
-```
-- Tarayıcınızda http://localhost:3000 adresini açarak sonucu görebilirsiniz.
-- Sayfayı düzenlemeye app/page.tsx dosyasını değiştirerek başlayabilirsiniz. Dosyada yaptığınız değişiklikler otomatik olarak güncellenir.
-- Bu proje, next/font kullanarak Vercel tarafından geliştirilen yeni yazı tipi ailesi Geist’i otomatik olarak optimize eder ve yükler.
-##  Backend
-
-Öncelikle gerekli bağımlılıkları yükleyin ve veritabanı migration işlemlerini uygulayın:
-
-```bash
-cd backend/LibrarySystem
-dotnet restore
-dotnet ef database update   
-dotnet run
-```
-- Varsayılan olarak API http://localhost:5029 adresinde çalışır.
-- Swagger dokümantasyonuna development ortamında http://localhost:5029/swagger üzerinden erişebilirsiniz.
 # Ekip Üyeleri
  👤 213301129-Kaan Pulat
 
