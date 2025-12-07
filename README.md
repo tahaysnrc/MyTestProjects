@@ -1,4 +1,4 @@
-[readme.md](https://github.com/user-attachments/files/24013001/readme.md)
+[readme.md](https://github.com/user-attachments/files/24013062/readme.md)
 
 <p align="center">
 <img src="Image.png"
@@ -12,11 +12,11 @@ width="300" height="300">
 # 📖 İçindekiler
 - [Genel Bakış](#genel-bakış)
 - [Özellikler](#özellikler)
-- [Teknolojiler](#teknolojiler-stack)
+- [Teknolojiler](#teknolojiler)
 - [Veritabanı Şeması](#veritabanı-şeması)
 - [API Dokümantasyonu](#api-dokümantasyonu)
 - [Kurulum ve Çalıştırma](#kurulum-ve-çalıştırma)
-- [Ekip Üyeleri](#yazarlar)
+- [Ekip Üyeleri](#ekip-üyeleri)
 
 # Genel Bakış
 **Kütüphane Uygulaması**, TypeScript ile yazılmış bir front-end ve C# (.NET) ile geliştirilmiş bir back-end içeren full-stack bir kütüphane yönetim uygulamasıdır. Kitaplar üzerinde CRUD işlemleri, ödünç alma/geri verme, kullanıcı yönetimi ve listeleme gibi temel kütüphane fonksiyonlarını sağlar.
@@ -47,7 +47,7 @@ width="300" height="300">
 
 # Teknolojiler
 
-### 🔧 **Back-end**
+### **Back-end**
 - **Framework:** ASP.NET Core (.NET 8)
 - **ORM:** Entity Framework Core (SQL Server)
 - **Kimlik Doğrulama:** ASP.NET Identity + JWT Bearer Authentication
