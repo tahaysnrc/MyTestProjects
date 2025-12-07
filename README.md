@@ -1,4 +1,4 @@
-[readme.md](https://github.com/user-attachments/files/24014787/readme.md)
+[readme.md](https://github.com/user-attachments/files/24014836/readme.md)
 
 <p align="center">
 <img src="Image.png"
@@ -115,13 +115,13 @@ Root
    └─ src                            # Kaynak kodlar
        ├─ components                 # UI bileşenleri
        │   └─ ui                     # Genel UI parçaları
-       │       ├─ admin              # Admin paneli bileşenleri
+       │       ├─ Admin              # Admin paneli bileşenleri
        │       │   ├─ Common         # Ortak admin bileşenleri
        │       │   ├─ Modals         # Modal pencereler
        │       │   │   └─ Update     # Güncelleme modalları
        │       │   ├─ Shelves        # Raf bileşenleri
        │       │   └─ Users          # Kullanıcı bileşenleri
-       │       ├─ book               # Kitap bileşenleri
+       │       ├─ Book               # Kitap bileşenleri
        │       ├─ BookDetail         # Kitap detay bileşenleri
        │       ├─ Home               # Ana sayfa bileşenleri
        │       ├─ Profile            # Profil bileşenleri
